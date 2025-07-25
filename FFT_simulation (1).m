@@ -28,59 +28,26 @@ path_slip = '/home/souravsaha/DDMM/SlipSystemsLibrary';
 CodeName = '/home/souravsaha/DDMM/FiniteStrain/FFT_finite_basic_v1s4_nolocal.exe';
 
 %====================== CPFEM Specs =====================================
-%C11 = 243300;%*1.0462;
-%C11 = 300500;
-%C44 = E/(1+v)/2;
-%C44 = 117800;%*1.0462;
-%C12 = E*v/(1+v)/(1-2*v);
-%C12 = 156700;%*1.0462;
-%C22 = C11; C33 = C11;
-%C55 = C44; C66 = C44;
-%C13 = C12; C23 = C12;
-%Props = [C11, C22, C33, C44, C55, C66, C12, C13, C23];
-%Props(10) = 252;%g_zero1%p(1)
-%Props(11) = 252;%158;%g_zero2%p(1)
-%Props(12) = 252;%158;%g_zero3%p(1)
-%Props(13) = 252;%158;%g_zero4%p(1)
-
-%Props(14) = 0.00242;%gamma_dot_0
-%Props(14) = p(2);%gamma_dot_0
-%Props(15) = 58.8;%m
-%Props(16) = 50.7437;%Hdir_p(2)
-%Props(16) = 428.868900;  %525.5983*1.1*1.22;%505 %497.5983;  %415.5983;
-%Props(17) = 0.025;%Hdyn_p(3)
-%Props(18) = 1.0;%xLatent
-%Props(19) = 1.5;%a0
-%Props(20) = 50; %44.9174 %50.0028;%adir_p(4)
-%Props(21) = 1.9425; %1.9425;%adyn_p(5)
-
 p = [298.55 0.0024 80.4 299.08 0.00165 0.508];
-
 C11 = 223300;
-%C11 = 300000;
-%C44 = E/(1+v)/2;
 C44 = 117800;
-%C12 = E*v/(1+v)/(1-2*v);
 C12 = 156700;
 C22 = C11; C33 = C11;
 C55 = C44; C66 = C44;
 C13 = C12; C23 = C12;
 Props = [C11, C22, C33, C44, C55, C66, C12, C13, C23];
-Props(10) = p(1);%137;%252;%g_zero1%p(1)
-Props(11) = p(1);%137;%252;%g_zero2%p(1)
-Props(12) = p(1);%137;%252;%g_zero3%p(1)
-Props(13) = p(1);%252;%g_zero4%p(1)
-%
-Props(14) = p(2);%0.002;%gamma_dot_0
-%Props(14) = p(2);%gamma_dot_0
-Props(15) = p(3); %10;%m
-%Props(16) = 50.7437;%Hdir_p(2)
-Props(16) = p(4);%1;%395.8689; %428.8689; %running trial for general previ=465.8689
-Props(17) = p(5);%0;%Hdyn_p(3) prev=0.0000005
-Props(18) = p(6);%1.0; %1.0; %xLatent
-Props(19) = 1.5; %a0 originally 0
-Props(20) = 50.0;  %50.0028;%adir_p(4) prev = 200 16Pct=0
-Props(21) = 1.9425;%adyn_p(5) prev = 1.9425
+Props(10) = p(1);
+Props(11) = p(1);
+Props(12) = p(1);
+Props(13) = p(1);
+Props(14) = p(2);
+Props(15) = p(3); 
+Props(16) = p(4);
+Props(17) = p(5);
+Props(18) = p(6);
+Props(19) = 1.5; 
+Props(20) = 50.0;  
+Props(21) = 1.9425;
 
 
 PhaseType = 'FCC';
